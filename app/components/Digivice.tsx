@@ -20,8 +20,10 @@ const Digivice = () => {
       <>
    
       <div className={`position-relative ${styles['centered-image-size']}`}>
-
+      
+      
         <div className={styles['glass-effect']}></div>
+     
         <div className={styles['background-animate']}></div>
         <div id={id_vpet_screen} className={`${styles['screen-vpet']} ${styles['character']}`} >
 
@@ -30,8 +32,8 @@ const Digivice = () => {
         </div>
       
           { isLoading ?  <Loading /> : '' }
-
-        <div className={`position-relative d-flex justify-content-sm-around justify-content-around  ${styles.divSizeButton}`}>
+       
+          <div className={`position-relative d-flex justify-content-sm-around justify-content-around  ${styles.divSizeButton}`}>
           <ButtonLeft id={id_sound} textTitle={name} text={name} />
 
           <ButtonRight classText="top" textTitle="Calm" text={id_sound} />

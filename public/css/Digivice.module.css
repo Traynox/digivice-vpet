@@ -140,37 +140,30 @@
     left: 36%;
     width: 9vw;
     height: 16vh;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    backdrop-filter: brightness(1.2) saturate(1.2);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease-in-out;
-    z-index: 1;
+  
   
   }
   .screen-vpet,
   .background-animate {
-    position: absolute;
+  
     top: 33%;
     left: 33%;
     width: 10vw;
     height: 18vh;
     background-size: 200%;
-    z-index: -1;
+ 
   }
   .character {
     width: calc(1vw * var(--character-size));
     height: calc(2vh * var(--character-size));
-    position: absolute;
     top: 42% !important;
     left: 47% !important;
-    overflow: hidden !important;
     transform: scale(2) !important;
   }
   
   .sprite-move-two {
     bottom: calc(1.7vh * var(--character-size));
-    animation: vpet-move-two 1.4s steps(2) infinite;
+    
   }
   
 }
@@ -192,16 +185,15 @@
     height: calc(2.5vh * var(--character-size));
    
     position: absolute;
-    top: 37% !important;
+    top: 35% !important;
     left: 42% !important;
     
-    overflow: hidden !important;
     transform: scale(1.5) !important;
     }
 
     .sprite-move-two {
       bottom: calc(2.7vh * var(--character-size));
-      animation: vpet-move-two 1.4s steps(2) infinite;
+     
     }
   }
 
@@ -215,12 +207,7 @@
       left: 36%;
       width: 8.1vw;
       height: 14vh;
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: 10px;
-      backdrop-filter: brightness(1.2) saturate(1.2);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: background 0.3s ease-in-out;
-      z-index: 1;
+    
     }
   
     .character {
@@ -229,13 +216,13 @@
       position: absolute;
       top: 35% !important;
       left: 37% !important;
-      overflow: hidden !important;
+   
       transform: scale(0.9) !important;
     }
     
     .sprite-move-two {
       bottom: calc(3.2vh * var(--character-size));
-      animation: vpet-move-two 1.4s steps(2) infinite;
+     
     }
     
 
@@ -249,12 +236,7 @@
     left: 36%;
     width: 8.1vw;
     height: 14.5vh;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    backdrop-filter: brightness(1.2) saturate(1.2);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease-in-out;
-    z-index: 1;
+    
   }
 
   .character {
@@ -263,14 +245,11 @@
     position: absolute;
     top: 30% !important;
     left: 34% !important;
-    overflow: hidden !important;
+   
     transform: scale(0.7) !important;
   }
 
-  .character img {
-    position: relative !important;
-    left: 0px !important;
-  }
+
 
 }
 
@@ -297,7 +276,7 @@
   }
   
   .glass-effect {
-    position: relative;
+  
     top: 36% ;
     left: 36%;
     width: 24vw !important;
@@ -308,7 +287,7 @@
   /* V-PET CODE */
   .screen-vpet, 
   .background-animate {
-    position: absolute;
+  
     top: 30% !important;
     left: 36% !important;
     width: 24vw !important;
@@ -322,7 +301,7 @@
     position: relative;
     top: 40% !important;
     left: 43% !important;
-    overflow: hidden !important;
+    
     transform: scale(1.8) !important;
   }
   
@@ -360,7 +339,7 @@
   }
   
   .glass-effect {
-    position: relative;
+ 
     top: 36% ;
     left: 36%;
     width: 23.7vw !important;
@@ -371,7 +350,7 @@
   /* V-PET CODE */
   .screen-vpet, 
   .background-animate {
-    position: absolute;
+   
     top: 32% !important;
     left: 36% !important;
     width: 25vw !important;
@@ -385,7 +364,7 @@
     position: relative;
     top: 44% !important;
     left: 43% !important;
-    overflow: hidden !important;
+   
     transform: scale(1.5) !important;
   }
   
@@ -412,14 +391,14 @@
   .character {
     width: calc(2.5vw * var(--character-size)) !important;
     height: calc(2.5vh * var(--character-size)) !important;
-    position: relative;
+  
     top: 41% !important;
     left: 43% !important;
-    overflow: hidden !important;
+    
     transform: scale(1.4) !important;
   }
   .glass-effect {
-    position: relative;
+    
     top: 33% ;
     height: 15vh !important;
     
@@ -451,10 +430,10 @@
   .character {
     width: calc(3.7vw * var(--character-size)) !important;
     height: calc(3.5vh * var(--character-size)) !important;
-    position: relative;
+   
     top: 36% !important;
     left: 40% !important;
-    overflow: hidden !important;
+    
     transform: scale(1.1) !important;
   }
   
@@ -464,7 +443,7 @@
     
   } 
   .glass-effect {
-    position: relative;
+   
     top: 34.5% ;
     left: 36%;
     width: 24vw !important;
@@ -488,7 +467,7 @@
    
   }
   .glass-effect {
-    position: relative;
+   
     top: 40.5% ;
     left: 36%;
     width: 23vw !important;
@@ -498,7 +477,7 @@
 
   .screen-vpet, 
   .background-animate {
-    position: absolute;
+   
     top: 40% !important;
     left: 36% !important;
     width: 23vw !important;
@@ -512,7 +491,7 @@
     position: relative;
     top: 35% !important;
     left: 35% !important;
-    overflow: hidden !important;
+   
     transform: scale(0.8) !important;
   }
   
@@ -540,7 +519,7 @@
    
   }
   .glass-effect {
-    position: relative;
+   
     top: 38% ;
     left: 36%;
     width: 23vw!important;
@@ -550,7 +529,7 @@
 
   .screen-vpet, 
   .background-animate {
-    position: absolute;
+   
     top: 30% !important;
     left: 36% !important;
     width: 23vw !important;
@@ -564,7 +543,6 @@
     position: relative;
     top: 34% !important;
     left: 30% !important;
-    overflow: hidden !important;
   
     transform: scale(0.7) !important;
   }
@@ -593,7 +571,7 @@
   }
 
   .glass-effect {
-    position: relative;
+  
     top: 40% ;
     left: 36%;
     width: 23vw !important;
@@ -603,7 +581,7 @@
 
   .screen-vpet, 
   .background-animate {
-    position: absolute;
+   
     top: 40% !important;
     left: 36% !important;
     width: 25vw !important;
@@ -617,7 +595,7 @@
     position: relative;
     top: 34% !important;
     left: 33% !important;
-    overflow: hidden !important;
+   
     transform: scale(0.7) !important;
   }
   
@@ -646,7 +624,7 @@
   }
 
   .glass-effect {
-    position: relative;
+   
     top: 41.5% ;
     left: 36%;
     width: 22.5vw !important;
