@@ -1,0 +1,256 @@
+
+
+/*CSS BOTON IZQUIERDA*/
+@media (min-width:913px) {
+
+  .concentric-button {
+    display: flex;
+    position: absolute;
+    top: 39%;
+    left: 4%;
+    width: calc(17%*1.2);
+    height: calc(37%/1.6);
+    border: none;
+    background-color: var( --button-color);
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .oval-button-bottom {
+    display: flex;
+    position: absolute;
+    top: 54.5%;
+    left: 72.5%;
+    width: calc(13.5%*1.6);
+    height: calc(29%/1.6);
+    cursor: pointer;
+    border: none;
+    background-color: var( --button-color);
+   
+    border-radius: 95% 90% 90% 95% ;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0px;
+    transition: box-shadow 0.3s;
+  }
+  .oval-button-top {
+    display: flex;
+    position: relative;
+    top: 28.5%;
+    left: 33.5%;
+    width: calc(13.5%*1.6);
+    height:  calc(29%/1.6);
+    border: none;
+    background-color: var( --button-color);
+   
+    border-radius: 90% 90% 90% 90% ;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0px;
+    transition: box-shadow 0.3s;
+  }
+
+}/*END MEDIA MIN 767*/
+    
+
+
+
+
+
+
+
+@media (max-width:912px){
+
+  .concentric-button {
+    display: flex;
+    position: relative;
+    top: -0.5%;
+    left: -2.3%;
+    width: calc(14%*1.5);
+    height: calc(25vw/1.5);
+    border: none;
+    background-color:  var( --button-color);
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .oval-button-bottom {
+    display: flex;
+    position: relative;
+    top: 11%;
+    left: 0.3%;
+    width: calc(15%*1.5);
+    height: calc(19vw/1.5);
+ 
+    cursor: pointer;
+    border: none;
+    background-color:var( --button-color);
+   
+    border-radius: 95% 90% 90% 95% ;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0px;
+    transition: box-shadow 0.3s;
+  }
+  .oval-button-top {
+    display: flex;
+    position: relative;
+    top: -12%;
+   
+    left: 34%;
+    width: calc(15%*1.5);
+    height: calc(19vw/1.5);
+
+    border: none;
+    background-color: var( --button-color);
+   
+    border-radius: 90% 90% 90% 90% ;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0px;
+    transition: box-shadow 0.3s;
+  }
+  
+}/*END MEDIA */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CSS GENERAL BUTTONS */
+
+  .circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid #07074D;
+    border-radius: 50%;
+    opacity: 0.6;
+  }
+
+  .circle:nth-child(1) {
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circle:nth-child(2) {
+    width: 60%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circle:nth-child(3) {
+    width: 40%;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circle:nth-child(4) {
+    width: 20%;
+    height: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .concentric-button:active {
+    transform: scale(0.96); /* Efecto de hundir al presionar */
+    box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .circle:nth-child(1)::after,
+  .circle:nth-child(2)::after,
+  .circle:nth-child(3)::after,
+  .circle:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: transparent;
+    box-shadow: inset 0px 4px 0px 5px rgba(0, 0, 0, 0.3); /* Sombra interna inclinada */
+    top: -2px; /* Ajustar posición para inclinar */
+    left: -2px; /* Ajustar posición para inclinar */
+  }
+
+
+  .inner-oval {
+    position: absolute;
+    width: 83%;
+    height: 90%;
+    border: 2px solid #07074D;
+    border-radius: 50%;
+    box-shadow: 3px 0px 3px 3px rgba(61, 61, 61, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+  }
+  
+  .inner-oval::before {
+    content: "";
+    position: absolute;
+    width: 94%;
+    height: 94%;
+    border-radius: inherit;
+    background-color: transparent;
+    box-shadow: inset -2px 0px 2px 2px rgba(250, 249, 249, 0.5);
+     top: 3%;
+     left: 3%;
+  }
+  
+  .outer-inner {
+    top: 50%;
+    left: 50%;
+   
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  
+  .oval-button-top:active .inner-oval {
+    transform: translate(-50%, -50%) scale(0.98);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+  }
+  
+  .oval-button-top:active .outer-inner {
+    transform: translate(-50%, -50%) scale(0.5);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .oval-button-bottom:active .inner-oval {
+    transform: translate(-50%, -50%) scale(0.98);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+  }
+  
+  .oval-button-bottom:active .outer-inner {
+    transform: translate(-50%, -50%) scale(0.5);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  /*.oval-button:active{
+    transform: scale(0.97);
+  }*/
+  
+
+
+

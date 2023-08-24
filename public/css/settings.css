@@ -1,0 +1,61 @@
+:root{
+    --character-size:5;
+    --button-color: #7272BC;
+    --light-blue-background: rgba(0,212,255,1);
+    --blue-color-background: rgba(9,9,121,1);
+    --orange: #ff6600;
+    --yellow: #ffff00;
+    --yellow-two: #fcce02;
+    --yellow-three: #ffe600;
+    --linear--font: #51C6CD;
+}
+
+@font-face {
+    font-family:Digivolve;
+    src: url('../assets/fonts/digimon/Pixel-Digivolve.otf');
+}
+
+@font-face {
+    font-family:Digicode;
+    src: url('../assets/fonts/digicode/Digicode-Bold.ttf');
+}
+
+.cristal{
+    background: rgba(255, 255, 255, 0.2) !important; /* Color de fondo con transparencia */
+    backdrop-filter: blur(10px) !important; /* Efecto de desenfoque en el fondo */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important; /* Borde con transparencia */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important; 
+    
+  }
+
+  @media (max-width:1023px) and (orientation: landscape) {
+ 
+    .message{
+      font-family: Digivolve;
+      position: fixed;
+      margin: 2rem;
+      left: 5%;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      z-index: 1000;
+    }
+    .message::before {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        content: "No disponible en esta resolucion :(";
+        font-size: 3rem;
+        
+      }
+      
+      .app {
+        display: none;
+        background: linear-gradient(10deg,var(--light-blue-background) 0%, var(--blue-color-background) 100%);
+        color: white;
+      }
+  }
+  

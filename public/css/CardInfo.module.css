@@ -1,0 +1,50 @@
+
+  .pixel-art-container {
+    background-image: url('./../assets/images/progress-bar.png');
+    background-repeat: no-repeat; /* Evita que la imagen se repita en el fondo */
+    background-size: 100% 35px ;
+    background-position: center ; /* Ajusta la imagen al tamaño del contenedor y la recorta si es necesario */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative; 
+   
+  }
+
+  .progress-container {
+    
+    position: relative;
+    top: 4px; /* Asegura que el contenido se ajuste dentro del contenedor */
+    left: 3.5%;
+    width: 93%;
+    /* Coloca el contenido por encima de la imagen de fondo */
+  }
+
+.containt {
+  display: none;
+  transition: 1s;
+}
+.pixel-font{
+  font-family: Digivolve;
+}
+
+.buttonCard{
+  padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+ 
+  border-radius: 3px;
+  font-size: 20px;
+  color: #FFF;
+  text-decoration: none;
+  background-color: #2ecc71;
+  border: none;
+  border-bottom: 5px solid #27ae60;
+  text-shadow: 0px -2px #27ae60;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.buttonCard:active{
+  -webkit-transform: translate(0px,5px);
+  -ms-transform: translate(0px,5px);
+  transform: translate(0px,5px);
+  border-bottom: 1px solid #2ecc71;
+}

@@ -1,0 +1,151 @@
+.digi-charge {
+  display: inline-block;
+  position: absolute;
+  width:10vw;
+  height: 15vh;
+  z-index: 2;
+  top: 34%;
+  left: 35%;
+  transform: rotate(-90deg) !important;
+ 
+}
+
+.digi-charge div {
+  display: inline-block;
+  position: absolute;
+  width: 15.125% !important;
+  background: #fffffff5 !important;
+  animation: digi-charge 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.digi-charge div:nth-child(1) {
+  left: 10%;
+  animation-delay: -0.24s;
+}
+
+.digi-charge div:nth-child(2) {
+  left: 32%;
+  animation-delay: -0.12s;
+}
+
+.digi-charge div:nth-child(3) {
+  left: 54%;
+  animation-delay: 0;
+}
+
+@keyframes digi-charge {
+  0% {
+    top: 8%;
+    height: 75.71429%;
+  }
+  50%, 100% {
+    top: 24%;
+    height: 45.71429%;
+  }
+}
+
+@media (max-width:1280px){
+
+  .digi-charge {
+  
+  
+    width: 10vw !important;
+    height:15vh !important;
+    z-index: 2;
+    top: 33%;
+    left: 34% !important;
+  
+  }
+  
+}
+
+@media (max-width: 1024px){
+
+  .digi-charge {
+  
+    width: 10vw !important;
+    height:15vh !important;
+    z-index: 2;
+    top: 33%;
+    left: 34% !important;
+   
+  
+  }
+
+}
+  @media (max-width: 912px){
+
+    .digi-charge {
+    
+      width: 28vw !important;
+      height: 18vh !important;
+      z-index: 2;
+      top: 34%;
+      left: 35% !important;
+     
+    
+    }
+  
+}
+
+@media (max-width: 540px){
+
+  .digi-charge {
+  
+   
+    width: 27vw !important;
+    height: 18vh !important;
+    z-index: 2;
+    top: 33%;
+    left: 36% !important;
+  
+  }
+
+}
+
+@media (max-width: 414px){
+
+  .digi-charge {
+  
+  
+    width: 28vw !important;
+    height: 13vh !important;
+    z-index: 2;
+    top: 36%;
+    left: 34% !important;
+   
+    
+  }
+
+}
+@media (max-width: 375px){
+
+  .digi-charge {
+   
+   
+    width: 30vw !important;
+    height: 15vh !important;
+    z-index: 2;
+    top: 34%;
+    left: 33% !important;
+   
+    
+  }
+
+}
+
+@media (max-width: 280px){
+
+  .digi-charge {
+    display: inline-block;
+    position: absolute;
+    width: 25vw !important;
+    height: 12vh !important;
+    z-index: 2;
+    top: 38%;
+    left: 36% !important;
+   
+    
+  }
+
+}

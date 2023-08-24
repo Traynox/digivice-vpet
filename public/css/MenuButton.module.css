@@ -1,0 +1,218 @@
+  .boton-sprite {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    
+   
+  }
+
+  .imagen-sprite-size {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+
+  }
+  .state{
+    position: relative;
+    top: -7px;
+    
+  }
+
+  .happy-sprite{
+    width: 100%;
+    height: 100%;
+    background-image: url('./../assets/sprites/Emoticons.png');
+    background-size: 500%;
+    background-position: 0% 0%;
+    position: relative;
+    animation: happyMove 1s steps(2) infinite;
+  }
+
+  .sad-sprite{
+    width: 100%;
+    height: 100%;
+    background-image: url('./../assets/sprites/Emoticons.png');
+    background-size: 500%;
+    background-position: -201% 0%;
+    position: relative;
+    animation: sadMove 1s steps(2) infinite;
+  }
+
+  .lazy-sprite{
+    width: 100%;
+    height: 100%;
+    background-image: url('./../assets/sprites/Emoticons.png');
+    background-size: 500%;
+    background-position: -201% 0%;
+    position: relative;
+    animation: lazyMove 1s steps(2) infinite;
+  }
+  .hungry-sprite{
+    width: 100%;
+    height: 100%;
+    background-image: url('./../assets/sprites/Emoticons.png');
+    background-size: 500%;
+    background-position: -201% 0%;
+    position: relative;
+    animation: sadMove 1s steps(2) infinite;
+  }
+
+  .stressed-sprite{
+    width: 100%;
+    height: 100%;
+    background-image: url('./../assets/sprites/Emoticons.png');
+    background-size: 500%;
+    background-position: -802% 0%;
+    position: relative;
+    animation: stressedMove 1s steps(2) infinite;
+
+  }
+  .eat-sprite {
+    width: 100%;
+    /* Aprovecha el ancho completo del contenedor */
+    height: 100%;
+    background-image: url('./../assets/sprites/menu.png');
+    background-size: 400%;
+    background-position: -100% 0%;
+    position: relative;
+
+  }
+
+  .eat-sprite:hover {
+    transform: scale(0.95);
+    /* Reduce el tamaño del botón al hacer clic o pasar el mouse por encima */
+    filter: brightness(90%);
+    animation: eatMove 1s steps(2) infinite;
+  }
+
+  .mimar-sprite {
+    width: 100%;
+    /* Aprovecha el ancho completo del contenedor */
+    height: 100%;
+    background-image: url('./../assets/sprites/menu.png');
+    background-size: 400%;
+    background-position: -600% 190%;
+    position: relative;
+    left: -5px;
+
+  }
+
+  .mimar-sprite:hover {
+    transform: scale(0.95);
+    /* Reduce el tamaño del botón al hacer clic o pasar el mouse por encima */
+    filter: brightness(90%);
+    animation: mimarMove 1s steps(2) infinite;
+  }
+
+  .discipline-sprite {
+    width: 100%;
+    /* Aprovecha el ancho completo del contenedor */
+    height: 100%;
+    background-image: url('./../assets/sprites/menu.png');
+    background-size: 400%;
+    background-position: -0% -196%;
+    position: relative;
+
+  }
+
+  .discipline-sprite:hover {
+    transform: scale(0.95);
+    filter: brightness(90%);
+    animation: disciplineMove 1s steps(2) infinite;
+  }
+
+  .info-sprite {
+    width: 100%;
+    /* Aprovecha el ancho completo del contenedor */
+    height: 100%;
+    background-image: url('./../assets/sprites/menu.png');
+    background-size: 400%;
+    background-position: -599% 0%;
+    position: relative;
+
+  }
+
+  .info-sprite:hover {
+    transform: scale(0.95);
+    /* Reduce el tamaño del botón al hacer clic o pasar el mouse por encima */
+    filter: brightness(90%);
+    animation: infoMove 1s steps(2) infinite;
+  }
+
+  @keyframes happyMove {
+    from {
+      background-position: 0% 0%;
+    }
+
+    to {
+      background-position: -200% 0%;
+    }
+  }
+
+  @keyframes sadMove {
+    from {
+      background-position: -201% 0%;
+    }
+
+    to {
+      background-position: -405% 0%;
+    }
+  }
+  @keyframes lazyMove {
+    from {
+      background-position: -100% 0%;
+    }
+
+    to {
+      background-position: -302% 0%;
+    }
+  }
+  @keyframes stressedMove {
+    from {
+      background-position: -802% 0%;
+    }
+
+    to {
+      background-position: -1005% 0%;
+    }
+  }
+  
+  @keyframes eatMove {
+    from {
+      background-position: -0% 0%;
+    }
+
+    to {
+      background-position: -199% 0%;
+    }
+  }
+
+  @keyframes mimarMove {
+    from {
+      background-position: -600% 190%;
+    }
+
+    to {
+      background-position: -800% 190%;
+    }
+  }
+
+  @keyframes disciplineMove {
+    from {
+      background-position: -0% -196%;
+    }
+
+    to {
+      background-position: -200% -196%;
+    }
+  }
+
+  @keyframes infoMove {
+    from {
+      background-position: -599% 0%;
+    }
+
+    to {
+      background-position: -799% 0%;
+    }
+  }

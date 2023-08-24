@@ -1,0 +1,44 @@
+
+.digi-title{
+    font-family:Digivolve;
+    font-size: 13vw;
+    background: linear-gradient(to top, var( --orange) 20%,var(--yellow) 60%, #ffffff 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin: 0rem;
+    -webkit-text-stroke: 0.5vw var(--linear--font);
+  
+}
+
+.digi-subtitle{
+    font-family:Digivolve;
+    
+    background: linear-gradient(to top, var( --orange) 20%, var(--yellow-two) 60%, var(--yellow-three) 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: end;
+    margin-top: -2rem;
+    margin-right: 1rem;
+    -webkit-text-stroke: 1px var(--linear--font);
+}
+
+@media(max-width: 912px){
+    .digi-title{
+        font-size: 22vw;
+        -webkit-text-stroke: 1vw var(--linear--font);
+        
+    }
+
+    .digi-subtitle{
+        font-family:Digivolve;
+        font-size: 4vw;
+  
+        margin-top: 0.1rem;
+        margin-right: 0.5rem;
+       
+    }
+}
+
