@@ -22,6 +22,7 @@
 .navigation ul{
     display: flex;
     width: 350px;
+    margin: 2vw;
 }
 .navigation ul li{
     list-style: none;
@@ -31,9 +32,9 @@
     width: 87px;
     height: 87px;
     z-index: 2;
-    margin:10vw;
+    margin: 5vw;
     margin-left: -5vw;
-    transform: scale(1.2);
+    transform: scale(1.1);
  
 }
 .navigation ul li a{

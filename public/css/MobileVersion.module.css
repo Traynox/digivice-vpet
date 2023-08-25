@@ -1,10 +1,7 @@
 
-
-
-  
   .card-flip {
     position: absolute;
-    top: 25vh;
+    top: 20vh;
     left: 5vw;
     width: 90vw;
     height: 60vh;  
@@ -36,3 +33,17 @@
     transform: rotateY(180deg);
   }
   
+  @media (min-width:768px) {
+    .card-flip {
+     
+      top: 25vh;
+     
+    }
+  }
+    @media (min-width:540px) {
+      .card-flip {
+       
+        top: 26vh;
+       
+      }
+  }

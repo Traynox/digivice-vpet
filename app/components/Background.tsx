@@ -24,7 +24,7 @@ const Background = () => {
   useEffect(() => {
       if(isFirstInteraction && (tabType ==='attributes' || tabType==='info' || tabType==='digivice'))
           getAudioSound(id_sound);
-      console.log("hola")
+     
   }, [tabType]);
   
 

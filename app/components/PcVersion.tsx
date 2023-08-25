@@ -7,17 +7,16 @@ import CardInfo from './card/CardInfo'
     return (
         <>
             <div className='row justify-content-around d-flex align-items-center'>
-                <div className=" col-md-4 col-lg-4">
+                <div className="col-md-4 col-lg-4">
                     <div className="card cristal">
                         <div className="card-body">
-
-                    <Digivice />
+                            <Digivice />
                         </div>
                     </div>
-                    
+
                 </div>
                 <div className="col-md-4 col-lg-4 ">
-                   
+
                     <CardInfo />
                 </div>
             </div>
